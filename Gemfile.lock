@@ -9,7 +9,7 @@ GEM
       googleapis-common-protos-types (~> 1.0.0)
     puma (3.12.0)
     rack (2.0.6)
-    rack-lightning (0.1.0)
+    rack-lightning (0.1.1)
       grpc (>= 1.16.0)
       rack
 
