@@ -3,7 +3,7 @@ require "rack/lightning"
 
 Fourohtwo = Rack::Builder.new {
   map "/" do
-    run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, ['Hello Hello']] }
+    run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, ['Hello Hello <a href="/402">invoice</a>']] }
   end
   map "/402-static" do
     # use Rack::Lightning
