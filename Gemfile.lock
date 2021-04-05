@@ -1,24 +1,42 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    google-protobuf (3.6.1)
-    googleapis-common-protos-types (1.0.2)
-      google-protobuf (~> 3.0)
-    grpc (1.16.0)
-      google-protobuf (~> 3.1)
-      googleapis-common-protos-types (~> 1.0.0)
-    puma (3.12.0)
-    rack (2.0.6)
-    rack-lightning (0.1.1)
-      grpc (>= 1.16.0)
+    google-protobuf (3.14.0)
+    googleapis-common-protos-types (1.0.6)
+      google-protobuf (~> 3.14)
+    grpc (1.35.0)
+      google-protobuf (~> 3.14)
+      googleapis-common-protos-types (~> 1.0)
+    lnrpc (0.11.1)
+      google-protobuf (>= 3.7)
+      grpc (>= 1.19.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.5)
+    puma (5.2.0)
+      nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-lightning (0.1.2)
+      lnrpc (>= 0.7.1)
       rack
+    rack-protection (2.1.0)
+      rack
+    ruby2_keywords (0.0.4)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  lnrpc
   puma
   rack-lightning
+  sinatra
 
 BUNDLED WITH
-   1.17.1
+   2.1.4
