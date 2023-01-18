@@ -15,7 +15,7 @@ GEM
     nio4r (2.5.5)
     puma (5.2.0)
       nio4r (~> 2.0)
-    rack (2.2.3)
+    rack (2.2.6.2)
     rack-lightning (0.1.2)
       lnrpc (>= 0.7.1)
       rack
